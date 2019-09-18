@@ -210,7 +210,7 @@ const counterMachine = Machine({
   }
 });
 
-interpret(counterMachine).send('INC_TWICE');
+interpret(counterMachine).start().send('INC_TWICE');
 // => "Before: 2"
 // => "After: 2"
 ```
